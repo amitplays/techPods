@@ -1,6 +1,14 @@
 #root,
 body {
   background-color: rgba(235, 232, 232, 0.767);
+  height: 100%;
+}
+
+/* Safari horizontal Scroll issue */
+
+.scrolling-element {
+  overflow-x: scroll; /* Must be 'scroll' not 'auto' */
+  -webkit-overflow-scrolling: touch;
 }
 
 html {
@@ -26,16 +34,25 @@ html {
 
 .App {
   text-align: center;
-  max-width: 70%;
+  max-width: 95%;
   display: block;
   margin: auto;
   font-family: "Quicksand", sans-serif;
+}
+
+.form-control:focus {
+  border-color: rgb(211, 131, 12) !important;
+  box-shadow: inset 1px 1px rgb(211, 131, 12), 0 0 8px rgb(211, 131, 12) !important;
 }
 
 .headerStyles {
   text-align: center;
   padding-top: 20px;
   border-radius: 15px !important;
+}
+.navBarContainer {
+  padding-left: 25px !important;
+  padding-right: 25px !important;
 }
 
 .navBarStyles {
@@ -55,27 +72,110 @@ html {
   font-size: 16px;
 }
 
+.nav {
+  justify-content: space-evenly;
+}
+
+/* ContactUs Tabs */
+
+.ContactTabStyle {
+  margin: 35px;
+}
+
+.contactUsBody {
+  height: 100vh;
+  margin-top: 30px;
+}
+
+.empContactUsCard {
+  padding: 40px;
+  border-radius: 18px;
+  border-color: #1f1131;
+  /* background-color: #dee0e233; */
+  background-color: rgba(255, 255, 255, 0.911);
+  color: #331758;
+  height: 410px;
+  text-align: left !important;
+}
+
+/* overriding button styles on (selected) tabs */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff !important;
+  background-color: rgb(211, 131, 12) !important;
+  border-radius: 10px !important;
+  width: 250px !important;
+  height: 50px !important;
+}
+/* overriding button styles on tabs */
+.contactUsBody .nav-link {
+  width: 250px !important;
+  height: 50px !important;
+  color: rgb(211, 131, 12) !important;
+}
+
+.formParent {
+  text-align: left;
+}
+
+.carouselStyles {
+  background-color: #c2bdbdd2;
+}
+
 .cardStyles {
   padding: 40px;
   border-radius: 18px;
   /* background-color: #dee0e233; */
   background-color: rgba(255, 255, 255, 0.911);
   color: #000;
-  height: 410px;
+  /* height: 410px; */
   text-align: left !important;
+}
+
+.modal-content {
+  background-color: antiquewhite !important;
+  color: #000;
+  border-color: antiquewhite;
+  border-radius: 18px !important;
 }
 
 .cardStyles:hover {
   box-shadow: 4px 10px 14px rgba(245, 184, 93, 0.521);
 }
 
-.cardOneOfOne {
+.empContactUsCard:hover {
+  box-shadow: 4px 10px 14px #96949767;
+}
+
+.Illustration {
+  display: block;
+  margin: auto;
+  padding: 5px;
+}
+
+.fullWidthHomeCard {
   max-width: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: rgb(34, 6, 6);
+  /* background-image: linear-gradient(orange, yellow); */
+}
+
+.fullWidthContactCard {
+  max-width: 100%;
+  width: 100%;
+}
+
+.carousel-caption {
+  position: initial !important;
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+
+.buttonWrapperCarousel {
+  width: 95%;
+  text-align: right;
 }
 
 .cardOneOfTwo {
@@ -109,8 +209,8 @@ html {
 }
 
 .CardImages {
-  max-width: 300px;
-  max-height: 450px;
+  max-width: 200px;
+  max-height: 350px;
 }
 
 .cardHeading {
@@ -129,4 +229,53 @@ html {
   display: flex;
   flex-flow: row;
   justify-content: space-around;
+}
+
+.faqBody {
+  margin-top: 30px;
+  height: 100vh;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000 !important;
+  background-color: transparent !important;
+}
+.accordion-button:focus {
+  box-shadow: 0 0 0 0rem rgba(211, 131, 12, 0.363) !important;
+  border-radius: 10px !important;
+}
+
+.accordion-item,
+.accordion-button {
+  background-color: transparent !important;
+}
+
+.workshopsBody {
+  padding-bottom: 50px;
+}
+
+.fourCardRow {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.fourCardStyle {
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 18px;
+  width: 320px;
+  background-color: rgba(255, 255, 255, 0.911);
+  color: #000;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.fourCardStyle:hover {
+  box-shadow: 4px 10px 14px rgba(245, 184, 93, 0.521);
+}
+
+.subsCardHeading {
+  padding: 10px;
 }

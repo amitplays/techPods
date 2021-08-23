@@ -1,33 +1,55 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, Button, Modal } from "react-bootstrap";
+import ContactUs from "./ContactUs";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
     window.scrollTo(0, 0);
   });
+
   return (
     <div className="headerStyles">
       <Navbar
-        className="navBarStyles"
+        className="navBarStyles ml-auto"
+        sticky="top"
         collapseOnSelect
-        expand="lg"
+        expand="sm"
         bg="light"
         variant="light"
       >
-        <Container>
-          <Navbar.Brand href="#home">TechPods</Navbar.Brand>
+        <Container className="navBarContainer">
+          <Navbar.Brand href="/">TechPods</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
-            </Nav>
-            <Nav>
-              <Nav.Link href="#deets">More deets</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
-                Dank memes
+          <Nav.Link as={Link} to={"./faqs"} eventKey={2}>
+            <Button size="sm" variant="outline-dark">
+              Recruiters
+            </Button>
+          </Nav.Link>
+
+          <Navbar.Collapse
+            className="justify-content-end"
+            id="responsive-navbar-nav"
+          >
+            <Nav className="ml-auto">
+              <Nav.Link
+                // onClick={contactUs}
+                as={Link}
+                to={"./ContactUs"}
+                eventKey={2}
+              >
+                Contact Us
+              </Nav.Link>
+              <Nav.Link as={Link} to={"./faqs"} eventKey={2}>
+                FAQs
+              </Nav.Link>
+              <Nav.Link as={Link} to={"./workshops"} eventKey={3}>
+                Workshops
+              </Nav.Link>
+              <Nav.Link as={Link} to={"./certifications"} eventKey={4}>
+                Certifications
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
