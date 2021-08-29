@@ -23,7 +23,7 @@ export default function Header() {
         <Container className="navBarContainer">
           <Navbar.Brand href="/">TechPods</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Nav.Link as={Link} to={"./faqs"} eventKey={2}>
+          <Nav.Link as={Link} to={"./recruiter"} eventKey={2}>
             <Button size="sm" variant="outline-dark">
               Recruiters
             </Button>

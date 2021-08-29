@@ -6,6 +6,7 @@ import FirstBlock from "./Components/FirstBlock";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ContactUs from "./Components/ContactUs";
 import Faq from "./Components/Faq";
+import Recruiter from "./Components/Recruiter";
 import Workshops from "./Components/Workshops";
 import Certifications from "./Components/Certifications";
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" exact component={FirstBlock}></Route>
           <Route path="/contactUs" component={ContactUs}></Route>
           <Route path="/faqs" component={Faq}></Route>
+          <Route path="/recruiter" component={Recruiter}></Route>
           <Route path="/workshops" component={Workshops}></Route>
           <Route path="/certifications" component={Certifications}></Route>
         </Switch>

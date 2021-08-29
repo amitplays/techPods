@@ -7,6 +7,12 @@ export default function Certifications() {
     <div>
       <div className="workshopsBody">
         <h1 style={{ padding: 40, textAlign: "left" }}>Certifications</h1>
+        {/* <div className="cardStyles fullWidthHomeCard">
+          <p>
+            Certifications will be awarded to students who clear the exam from
+            the techPods App.
+          </p>
+        </div> */}
         <div className="fourCardRow">
           <Fade left>
             <div className="fourCardStyle">

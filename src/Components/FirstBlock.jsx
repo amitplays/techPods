@@ -13,10 +13,11 @@ export default function FirstBlock() {
             {/* ----------------- FIRST ITEM ----------------- */}
             <Carousel.Item interval={5000}>
               <Carousel.Caption>
-                <h3>ASPIRING SOFTWARE DEVELOPERS</h3>
+                <h1>Launch a Fulfilling, Future-Proof Career</h1>
                 <p>
-                  Learn the process and skills that sets software developer
-                  apart from others.
+                  Become invaluable in our tech-driven world. Meet the global
+                  demand for problem-solvers with strong technical foundations
+                  and the agility to keep learning.
                 </p>
               </Carousel.Caption>
             </Carousel.Item>
@@ -24,10 +25,11 @@ export default function FirstBlock() {
             {/* ----------------- SECOND ITEM ----------------- */}
             <Carousel.Item interval={5000}>
               <Carousel.Caption>
-                <h3>ENGG. STUDENTS & GRADS</h3>
+                <h1>Open Doors With Industry Connections</h1>
                 <p>
-                  See how software developer happens in the real world and learn
-                  and build out your own web apps.
+                  Tap into GA’s growing global network of tech experts,
+                  instructors, hiring partners, and alumni, and equip yourself
+                  to succeed in a rapidly expanding field.
                 </p>
               </Carousel.Caption>
             </Carousel.Item>
@@ -36,11 +38,12 @@ export default function FirstBlock() {
 
             <Carousel.Item interval={9000}>
               <Carousel.Caption>
-                <h3> Mentors for Students & Staffing partner for Employers </h3>
+                <h1> Build a Professional-Grade Portfolio </h1>
                 <img src={speed} alt="speed" className="CardImages" />
                 <p>
-                  You'll come away from this course able to create more
-                  thoughtful, sophisticated solutions as a software developer.
+                  Showcase your coding and collaboration skills to potential
+                  employers, creating full-stack web applications that leverage
+                  modern programming languages, frameworks, and tools.
                 </p>
               </Carousel.Caption>
               <div className="buttonWrapperCarousel">
@@ -52,6 +55,19 @@ export default function FirstBlock() {
                   Enroll Now
                 </Button>
               </div>
+            </Carousel.Item>
+
+            {/* ----------------- FOURTH ITEM ----------------- */}
+            <Carousel.Item interval={5000}>
+              <Carousel.Caption>
+                <h1>Get Personalized Job Support at Every Step</h1>
+                <p>
+                  Build confidence with mock technical interview preparation and
+                  whiteboard challenges, get connected with top employers, and
+                  navigate your job search from end-to-end with a dedicated
+                  career coach.
+                </p>
+              </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
         </div>

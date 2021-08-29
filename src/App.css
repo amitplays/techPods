@@ -83,7 +83,7 @@ html {
 }
 
 .contactUsBody {
-  height: 100vh;
+  min-height: 100vh;
   margin-top: 30px;
 }
 
@@ -94,7 +94,7 @@ html {
   /* background-color: #dee0e233; */
   background-color: rgba(255, 255, 255, 0.911);
   color: #331758;
-  height: 410px;
+  min-height: 410px;
   text-align: left !important;
 }
 
@@ -104,8 +104,10 @@ html {
   color: #fff !important;
   background-color: rgb(211, 131, 12) !important;
   border-radius: 10px !important;
-  width: 250px !important;
-  height: 50px !important;
+  width: 450px !important;
+  height: 65px !important;
+  font-size: 24px;
+  margin: 5px;
 }
 /* overriding button styles on tabs */
 .contactUsBody .nav-link {
@@ -128,7 +130,7 @@ html {
   /* background-color: #dee0e233; */
   background-color: rgba(255, 255, 255, 0.911);
   color: #000;
-  /* height: 410px; */
+  min-height: 410px;
   text-align: left !important;
 }
 
@@ -233,7 +235,7 @@ html {
 
 .faqBody {
   margin-top: 30px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .accordion-button:not(.collapsed) {
@@ -278,4 +280,51 @@ html {
 
 .subsCardHeading {
   padding: 10px;
+}
+
+.recruiterBody {
+  min-height: 100vh;
+}
+
+.recruiterBody .cardStylesRecruiter {
+  background-color: #331758;
+  color: rgb(221, 187, 34) !important;
+}
+
+.cardStylesRecruiter {
+  padding: 40px;
+  border: 1px solid rgb(221, 187, 34);
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 0.911);
+  min-height: 400px;
+  text-align: left !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerImage {
+  max-width: 100%;
+  background-size: contain;
+}
+
+.fullWidthFaqCard {
+  background-color: transparent;
+  width: 50%;
+}
+
+.fullWidthFaqCard:hover {
+  box-shadow: none;
+}
+
+/* overriding button styles on tabs */
+.faqBody .nav-link {
+  color: #fff !important;
+  background-color: rgba(207, 144, 48, 0.39) !important;
+  border-radius: 10px !important;
+  width: 450px !important;
+  height: 65px !important;
+  font-size: 24px;
+  margin: 5px;
 }
