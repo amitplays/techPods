@@ -1,6 +1,9 @@
 import React from "react";
 import Slide from "react-reveal/Slide";
 import speed from "../assets/test.png";
+import resume from "../assets/resume.png";
+import recruit from "../assets/recrui.png";
+
 import { Button, Carousel } from "react-bootstrap";
 
 export default function FirstBlock() {
@@ -11,19 +14,26 @@ export default function FirstBlock() {
         <div className="cardStyles fullWidthHomeCard">
           <Carousel pause="hover" indicators={false} controls={false}>
             {/* ----------------- FIRST ITEM ----------------- */}
-            <Carousel.Item interval={5000}>
-              <Carousel.Caption>
-                <h1>Launch a Fulfilling, Future-Proof Career</h1>
-                <p>
-                  Become invaluable in our tech-driven world. Meet the global
-                  demand for problem-solvers with strong technical foundations
-                  and the agility to keep learning.
-                </p>
-              </Carousel.Caption>
+            <Carousel.Item className="mainCarousel" interval={29000}>
+              <div
+                style={{ maxWidth: "80%", float: "left", textAlign: "left" }}
+              >
+                <Carousel.Caption>
+                  <h1>Launch a Fulfilling, Future-Proof Career</h1>
+                  <p>
+                    Become invaluable in our tech-driven world. Meet the global
+                    demand for problem-solvers with strong technical foundations
+                    and the agility to keep learning.
+                  </p>
+                </Carousel.Caption>
+              </div>
+              <div style={{ maxWidth: "20%", float: "right" }}>
+                <img src={resume} alt="speed" className="CardImages" />
+              </div>
             </Carousel.Item>
 
             {/* ----------------- SECOND ITEM ----------------- */}
-            <Carousel.Item interval={5000}>
+            <Carousel.Item interval={1000}>
               <Carousel.Caption>
                 <h1>Open Doors With Industry Connections</h1>
                 <p>
@@ -36,10 +46,9 @@ export default function FirstBlock() {
 
             {/* ----------------- THIRD ITEM ----------------- */}
 
-            <Carousel.Item interval={9000}>
+            <Carousel.Item interval={1000}>
               <Carousel.Caption>
                 <h1> Build a Professional-Grade Portfolio </h1>
-                <img src={speed} alt="speed" className="CardImages" />
                 <p>
                   Showcase your coding and collaboration skills to potential
                   employers, creating full-stack web applications that leverage
@@ -54,6 +63,9 @@ export default function FirstBlock() {
                 >
                   Enroll Now
                 </Button>
+              </div>
+              <div className="fullWidth-image-container">
+                <img src={resume} alt="speed" className="CardImages" />
               </div>
             </Carousel.Item>
 
