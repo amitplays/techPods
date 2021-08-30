@@ -4,7 +4,7 @@ import speed from "../assets/test.png";
 import resume from "../assets/resume.png";
 import recruit from "../assets/recrui.png";
 
-import { Button, Carousel } from "react-bootstrap";
+import { Button, Carousel, Row, Col } from "react-bootstrap";
 
 export default function FirstBlock() {
   return (
@@ -15,21 +15,25 @@ export default function FirstBlock() {
           <Carousel pause="hover" indicators={false} controls={false}>
             {/* ----------------- FIRST ITEM ----------------- */}
             <Carousel.Item className="mainCarousel" interval={29000}>
-              <div
-                style={{ maxWidth: "80%", float: "left", textAlign: "left" }}
-              >
-                <Carousel.Caption>
-                  <h1>Launch a Fulfilling, Future-Proof Career</h1>
-                  <p>
-                    Become invaluable in our tech-driven world. Meet the global
-                    demand for problem-solvers with strong technical foundations
-                    and the agility to keep learning.
-                  </p>
-                </Carousel.Caption>
-              </div>
-              <div style={{ maxWidth: "20%", float: "right" }}>
-                <img src={resume} alt="speed" className="CardImages" />
-              </div>
+              <Row>
+                <Col sm={8}>
+                  <div>
+                    <Carousel.Caption>
+                      <h1>Launch a Fulfilling, Future-Proof Career</h1>
+                      <p>
+                        Become invaluable in our tech-driven world. Meet the
+                        global demand for problem-solvers with strong technical
+                        foundations and the agility to keep learning.
+                      </p>
+                    </Carousel.Caption>
+                  </div>
+                </Col>
+                <Col sm={4}>
+                  <div style={{ display: "contents" }}>
+                    <img src={resume} alt="speed" className="CardImages" />
+                  </div>
+                </Col>
+              </Row>
             </Carousel.Item>
 
             {/* ----------------- SECOND ITEM ----------------- */}

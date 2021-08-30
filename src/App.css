@@ -222,6 +222,7 @@ html {
 .CardImages {
   max-width: 200px;
   max-height: 350px;
+  display: block;
 }
 
 .cardHeading {
@@ -349,4 +350,7 @@ html {
 
 .mainCarousel {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
