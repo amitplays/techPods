@@ -9,6 +9,7 @@ import Faq from "./Components/Faq";
 import Recruiter from "./Components/Recruiter";
 import Workshops from "./Components/Workshops";
 import Certifications from "./Components/Certifications";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
           <Route path="/workshops" component={Workshops}></Route>
           <Route path="/certifications" component={Certifications}></Route>
         </Switch>
+        <Slide bottom>
+          <Footer />
+        </Slide>
       </div>
     </Router>
   );

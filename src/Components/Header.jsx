@@ -14,9 +14,9 @@ export default function Header() {
     <div className="headerStyles">
       <Navbar
         className="navBarStyles ml-auto"
-        fixed="top"
+        sticky="top"
         collapseOnSelect
-        expand="sm"
+        expand="md"
         bg="light"
         variant="light"
       >

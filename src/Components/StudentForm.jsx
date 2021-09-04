@@ -24,7 +24,7 @@ export function StudentForm() {
   };
 
   return (
-    <div>
+    <div style={{ padding: "30px" }}>
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
         <Row className="mb-1">
           <Form.Group
@@ -139,7 +139,7 @@ export function EmployerForm() {
   };
 
   return (
-    <div>
+    <div style={{ padding: "30px" }}>
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
         <Row className="mb-1">
           <Form.Group

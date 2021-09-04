@@ -50,9 +50,15 @@ html {
   padding-top: 20px;
   border-radius: 15px !important;
 }
-.navBarContainer {
-  padding-left: 25px !important;
-  padding-right: 25px !important;
+.headerStyles .navBarContainer {
+  max-width: 96%;
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
 }
 
 .navBarStyles {
@@ -60,6 +66,7 @@ html {
   border-radius: 18px;
   box-shadow: 5px 10px 16px #c2bdbdd2;
   color: #000;
+  /* margin: 20px 2.5% !important; */
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -104,7 +111,7 @@ html {
   color: #fff !important;
   background-color: rgb(211, 131, 12) !important;
   border-radius: 10px !important;
-  width: 450px !important;
+  width: 330px !important;
   height: 65px !important;
   font-size: 24px;
   margin: 5px;
@@ -117,7 +124,7 @@ html {
   color: #fff !important;
   background-color: rgba(207, 144, 48, 0.39) !important;
   border-radius: 10px !important;
-  width: 450px !important;
+  width: 330px !important;
   height: 65px !important;
   font-size: 24px;
   margin: 5px;
@@ -166,6 +173,7 @@ html {
   max-width: 100%;
   color: #000;
   width: 100%;
+  margin-top: 55px;
   background-color: rgb(255, 255, 255);
   /* background-image: linear-gradient(orange, yellow); */
 }
@@ -198,7 +206,7 @@ html {
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: black;
+  background-color: rgb(206, 231, 160);
 }
 .cardTwoOfTwo {
   max-width: 50%;
@@ -220,7 +228,7 @@ html {
 }
 
 .CardImages {
-  max-width: 200px;
+  max-width: 300px;
   max-height: 350px;
   display: block;
 }
@@ -335,7 +343,7 @@ html {
   color: #fff !important;
   background-color: rgba(207, 144, 48, 0.39) !important;
   border-radius: 10px !important;
-  width: 450px !important;
+  width: 330px !important;
   height: 65px !important;
   font-size: 24px;
   margin: 5px;
@@ -353,4 +361,58 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.headerStyles .bg-light {
+  background-color: rgb(235, 232, 232) !important;
+}
+
+.footerCardStyles {
+  padding: 5% 12%;
+  border-radius: 18px;
+  max-width: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  min-height: 410px;
+  text-align: left !important;
+  margin-bottom: 20px;
+}
+
+.footerCardStyles .list-group-item {
+  color: white;
+  background-color: black;
+}
+
+.footerLinks {
+  display: flex;
+  font-size: x-small;
+  justify-content: center;
+}
+
+.footerLinks .footerLinksFirstItem {
+  font-size: small;
+}
+
+.footerCardStyles .input-group > .form-control,
+.input-group > .form-select {
+  background-color: black;
+  max-width: 300px;
+}
+.footerCardStyles .input-group-text {
+  background-color: black;
+  color: white;
+}
+.footerCardStyles ul li {
+  display: inline;
+  padding-right: 15px;
+}
+
+.footerCardStyles ul {
+  padding-left: 2px;
+  font-size: small;
+}
+
+.footerCardStyles ul li :hover {
+  transform: scale(1.2);
 }

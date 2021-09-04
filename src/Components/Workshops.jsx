@@ -8,7 +8,7 @@ export default function Workshops() {
       <div className="workshopsBody">
         <h1 style={{ padding: 40, textAlign: "left" }}>Workshops</h1>
         <div className="fourCardRow">
-          <Fade left>
+          <Fade bottom>
             <div className="fourCardStyle">
               <h4 className="subsCardHeading">
                 Enggineering{" "}
@@ -25,7 +25,7 @@ export default function Workshops() {
               <Button variant="warning">Check Availability</Button>
             </div>
           </Fade>
-          <Fade left>
+          <Fade bottom>
             <div className="fourCardStyle">
               <h4 className="subsCardHeading">
                 MCA{" "}
@@ -42,7 +42,7 @@ export default function Workshops() {
               <Button variant="warning">Check Availability</Button>
             </div>
           </Fade>
-          <Fade right>
+          <Fade bottom>
             <div className="fourCardStyle">
               <h4 className="subsCardHeading">
                 BSE (C.S){" "}
@@ -59,7 +59,7 @@ export default function Workshops() {
               <Button variant="warning">Check Availability</Button>
             </div>
           </Fade>
-          <Fade right>
+          <Fade bottom>
             <div className="fourCardStyle">
               <h4 className="subsCardHeading">
                 BCA{" "}

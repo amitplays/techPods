@@ -1,12 +1,45 @@
 import React from "react";
 import { Button, Form, Row, Col, InputGroup, Tabs, Tab } from "react-bootstrap";
 import { StudentForm, EmployerForm } from "./StudentForm";
+import faq2 from "../assets/resume.png";
 
 export default function ContactUs() {
   return (
     <>
       <div className="contactUsBody">
-        <h1 style={{ padding: 40, textAlign: "left" }}>Contact Us</h1>
+        <div className="parentOfOneCard">
+          <div className="cardStyles fullWidthHomeCard">
+            <Row>
+              <Col sm={6}>
+                <div
+                  style={{
+                    padding: "30px",
+                  }}
+                >
+                  <h1>Launch a Fulfilling, Future-Proof Career</h1>
+                  <p>
+                    Become invaluable in our tech-driven world. Meet the global
+                    demand for problem-solvers with strong technical foundations
+                    and the agility to keep learning.
+                  </p>
+                </div>
+              </Col>
+              <Col sm={6}>
+                <div
+                  style={{
+                    display: "block",
+                    margin: "auto",
+                    maxWidth: "300px",
+                    padding: "30px",
+                  }}
+                >
+                  <img src={faq2} alt="speed" className="CardImages" />
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </div>
+
         <Tabs
           defaultActiveKey="Students"
           id="uncontrolled-tab-example"

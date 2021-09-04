@@ -91,7 +91,7 @@ export default function FirstBlock() {
 
       {/* Second Row */}
       <div className="parentOfTwoCards">
-        <Slide left>
+        <Slide bottom>
           <div className="cardStyles cardOneOfTwo">
             <h2 className="cardHeading">Go to the Next Level</h2>
             <p>
@@ -106,7 +106,7 @@ export default function FirstBlock() {
             </div>
           </div>
         </Slide>
-        <Slide right>
+        <Slide bottom>
           <div className="cardStyles cardTwoOfTwo">
             <h2 className="cardHeading">Go to the Next Level</h2>
             <p>
@@ -119,7 +119,7 @@ export default function FirstBlock() {
 
       {/* Third Row */}
       <div className="parentOfTwoCards">
-        <Slide left>
+        <Slide bottom>
           <div className="cardStyles cardOneOfTwo">
             <h2 className="cardHeading">Go to the Next Level</h2>
             <p>
@@ -128,7 +128,7 @@ export default function FirstBlock() {
             </p>
           </div>
         </Slide>
-        <Slide right>
+        <Slide bottom>
           <div className="cardStyles cardTwoOfTwo">
             <h2 className="cardHeading">Go to the Next Level</h2>
             <p>
@@ -140,7 +140,7 @@ export default function FirstBlock() {
       </div>
 
       <div className="parentOfTwoCards">
-        <Slide left>
+        <Slide bottom>
           <div className="cardStyles cardOneOfTwo">
             <h2 className="cardHeading">Go to the Next Level</h2>
             <p>
@@ -150,7 +150,7 @@ export default function FirstBlock() {
             <img src={speed} alt="speed" className="CardImages" />
           </div>
         </Slide>
-        <Slide right>
+        <Slide bottom>
           <div className="cardStyles cardTwoOfTwo">
             <h2 className="cardHeading">Go to the Next Level</h2>
             <p>

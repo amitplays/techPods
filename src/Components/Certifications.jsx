@@ -14,7 +14,7 @@ export default function Certifications() {
           </p>
         </div> */}
         <div className="fourCardRow">
-          <Fade left>
+          <Fade bottom>
             <div className="fourCardStyle">
               <h4 className="subsCardHeading">
                 Web App Developer{" "}
@@ -31,7 +31,7 @@ export default function Certifications() {
               <Button variant="success">Enroll Now</Button>
             </div>
           </Fade>
-          <Fade left>
+          <Fade bottom>
             <div className="fourCardStyle">
               <h4 className="subsCardHeading">
                 Mobile App Developer{" "}
@@ -48,7 +48,7 @@ export default function Certifications() {
               <Button variant="success">Enroll Now</Button>
             </div>
           </Fade>
-          <Fade right>
+          <Fade bottom>
             <div className="fourCardStyle">
               <h4 className="subsCardHeading">
                 Project Management{" "}
@@ -65,7 +65,7 @@ export default function Certifications() {
               <Button variant="success">Enroll Now</Button>
             </div>
           </Fade>
-          <Fade right>
+          <Fade bottom>
             <div className="fourCardStyle">
               <h4 className="subsCardHeading">
                 UX/UI Designer{" "}
