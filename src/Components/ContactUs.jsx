@@ -7,8 +7,10 @@ export default function ContactUs() {
   return (
     <>
       <div className="contactUsBody">
-        <div className="parentOfOneCard">
-          <div className="cardStyles fullWidthHomeCard">
+        <h1 style={{ padding: 40, textAlign: "left" }}>Contact Us</h1>
+
+        {/* <div className="parentOfOneCard"> */}
+        {/* <div className="cardStyles fullWidthHomeCard">
             <Row>
               <Col sm={6}>
                 <div
@@ -37,8 +39,8 @@ export default function ContactUs() {
                 </div>
               </Col>
             </Row>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
 
         <Tabs
           defaultActiveKey="Students"

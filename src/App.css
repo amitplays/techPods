@@ -1,6 +1,7 @@
 #root,
 body {
-  background-color: rgba(235, 232, 232, 0.767);
+  /* background-color: #fce4cc; */
+  background-image: linear-gradient(#f5ce8570, orange);
   height: 100%;
 }
 
@@ -40,6 +41,10 @@ html {
   font-family: "Quicksand", sans-serif;
 }
 
+.App h1 {
+  font-family: "Playfair Display", serif;
+}
+
 .form-control:focus {
   border-color: rgb(211, 131, 12) !important;
   box-shadow: inset 1px 1px rgb(211, 131, 12), 0 0 8px rgb(211, 131, 12) !important;
@@ -64,7 +69,7 @@ html {
 .navBarStyles {
   padding: 2px;
   border-radius: 18px;
-  box-shadow: 5px 10px 16px #c2bdbdd2;
+  /* box-shadow: 5px 10px 16px #c2bdbd00; */
   color: #000;
   /* margin: 20px 2.5% !important; */
 }
@@ -173,8 +178,8 @@ html {
   max-width: 100%;
   color: #000;
   width: 100%;
-  margin-top: 55px;
-  background-color: rgb(255, 255, 255);
+  margin-top: 25px;
+  background-color: rgba(255, 255, 255, 0);
   /* background-image: linear-gradient(orange, yellow); */
 }
 
@@ -284,6 +289,7 @@ html {
 .fourCardStyle {
   padding: 20px;
   margin-bottom: 15px;
+  margin-top: 15px;
   border-radius: 18px;
   width: 320px;
   background-color: rgba(255, 255, 255, 0.911);
@@ -364,7 +370,7 @@ html {
 }
 
 .headerStyles .bg-light {
-  background-color: rgb(235, 232, 232) !important;
+  background-color: rgba(235, 232, 232, 0) !important;
 }
 
 .footerCardStyles {

@@ -14,7 +14,7 @@ export default function FirstBlock() {
         <div className="cardStyles fullWidthHomeCard">
           <Carousel pause="hover" indicators={false} controls={false}>
             {/* ----------------- FIRST ITEM ----------------- */}
-            <Carousel.Item className="mainCarousel" interval={29000}>
+            <Carousel.Item className="mainCarousel" interval={2000}>
               <Row>
                 <Col sm={8}>
                   <div>
@@ -60,13 +60,13 @@ export default function FirstBlock() {
                 </p>
               </Carousel.Caption>
               <div className="buttonWrapperCarousel">
-                <Button
+                {/* <Button
                   className="justify-content-end"
                   variant="outline-light"
                   size="sm"
                 >
                   Enroll Now
-                </Button>
+                </Button> */}
               </div>
               <div className="fullWidth-image-container">
                 <img src={resume} alt="speed" className="CardImages" />
@@ -100,9 +100,9 @@ export default function FirstBlock() {
             </p>
             <img src={speed} alt="speed" className="CardImages" />
             <div className="buttonGroup">
-              <Button size="sm" className="linkButton" variant="dark">
+              {/* <Button size="sm" className="linkButton" variant="dark">
                 Learn More
-              </Button>
+              </Button> */}
             </div>
           </div>
         </Slide>
