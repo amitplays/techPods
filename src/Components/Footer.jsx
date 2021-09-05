@@ -13,6 +13,9 @@ import fbIcon from "../assets/fbIcon.png";
 import fbIcon2 from "../assets/fbLogo.png";
 import messIcon from "../assets/mesIcon2.png";
 import instaIcon from "../assets/instaIcon.png";
+import linkedIcon from "../assets/linkedIcon.png";
+
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -60,11 +63,11 @@ export default function Footer() {
               <div>
                 <ListGroup variant="flush">
                   <ListGroup.Item className="footerLinksFirstItem">
-                    MORE
+                    RESOURCES
                   </ListGroup.Item>
-                  <ListGroup.Item>Dapibus ac facilisis</ListGroup.Item>
-                  <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-                  <ListGroup.Item>Porta ac consectetur</ListGroup.Item>
+                  <ListGroup.Item>Recruiter </ListGroup.Item>
+                  <ListGroup.Item>Resume Builder</ListGroup.Item>
+                  <ListGroup.Item>Career Counssellor</ListGroup.Item>
                 </ListGroup>
               </div>
             </Col>
@@ -83,7 +86,9 @@ export default function Footer() {
                   <a href="#">Terms & Conditions</a>
                 </li>
                 <li>
-                  <a href="#">Contact Us</a>
+                  <a as={Link} to={"./ContactUs"}>
+                    Contact Us
+                  </a>
                 </li>
               </ul>
             </Col>
@@ -95,7 +100,7 @@ export default function Footer() {
                       style={{
                         maxWidth: "25px",
                       }}
-                      src={fbIcon}
+                      src={linkedIcon}
                     />
                   </a>
                 </li>
