@@ -1,6 +1,7 @@
 #root,
 body {
-  background-color: rgba(235, 232, 232, 0.767);
+  /* background-color: #fce4cc; */
+  background-image: linear-gradient(#fde14334, #b153002d);
   height: 100%;
 }
 
@@ -27,7 +28,7 @@ html {
 }
 ::-webkit-scrollbar {
   width: 6px;
-  background-color: black;
+  background-color: #f1e4d42f;
   margin-top: 50px;
   border-radius: 10px;
 }
@@ -37,7 +38,11 @@ html {
   max-width: 95%;
   display: block;
   margin: auto;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Nunito", sans-serif;
+}
+
+.App h1 {
+  font-family: "Playfair Display", serif;
 }
 
 .form-control:focus {
@@ -64,7 +69,7 @@ html {
 .navBarStyles {
   padding: 2px;
   border-radius: 18px;
-  box-shadow: 5px 10px 16px #c2bdbdd2;
+  /* box-shadow: 5px 10px 16px #c2bdbd00; */
   color: #000;
   /* margin: 20px 2.5% !important; */
 }
@@ -142,7 +147,7 @@ html {
   padding: 40px;
   border-radius: 18px;
   /* background-color: #dee0e233; */
-  background-color: rgba(255, 255, 255, 0.911);
+  background-color: rgba(255, 255, 255, 0.349);
   color: #000;
   min-height: 410px;
   text-align: left !important;
@@ -156,7 +161,7 @@ html {
 }
 
 .cardStyles:hover {
-  box-shadow: 4px 10px 14px rgba(245, 184, 93, 0.521);
+  /* box-shadow: 4px 10px 14px rgba(245, 184, 93, 0.521); */
 }
 
 .empContactUsCard:hover {
@@ -173,8 +178,11 @@ html {
   max-width: 100%;
   color: #000;
   width: 100%;
-  margin-top: 55px;
-  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: transparent;
   /* background-image: linear-gradient(orange, yellow); */
 }
 
@@ -206,7 +214,7 @@ html {
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: rgb(206, 231, 160);
+  background-color: rgba(255, 255, 255, 0.452);
 }
 .cardTwoOfTwo {
   max-width: 50%;
@@ -284,9 +292,10 @@ html {
 .fourCardStyle {
   padding: 20px;
   margin-bottom: 15px;
+  margin-top: 15px;
   border-radius: 18px;
   width: 320px;
-  background-color: rgba(255, 255, 255, 0.911);
+  background-color: rgba(255, 255, 255, 0.541);
   color: #000;
   padding-bottom: 20px;
   padding-top: 20px;
@@ -364,7 +373,7 @@ html {
 }
 
 .headerStyles .bg-light {
-  background-color: rgb(235, 232, 232) !important;
+  background-color: rgba(235, 232, 232, 0) !important;
 }
 
 .footerCardStyles {
@@ -415,4 +424,24 @@ html {
 
 .footerCardStyles ul li :hover {
   transform: scale(1.4);
+}
+
+.navBarContainer .recruiterButton {
+  border-radius: 18px;
+  padding: 8px 25px;
+  background-color: #1e5da5;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 5;
+}
+
+.navBarContainer span {
+  margin-top: "6.5px";
+  margin-left: "5px" !important;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+.navBarContainer img {
+  width: 56px;
+  padding: 0 6px;
 }

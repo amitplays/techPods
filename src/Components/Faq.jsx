@@ -6,11 +6,9 @@ import { Tabs, Tab, Accordion } from "react-bootstrap";
 export default function Faq() {
   return (
     <div className="faqBody">
-      <div className="parentOfOneCard">
-        <div className="cardStyles fullWidthFaqCard">
-          <img className="bannerImage" alt="faq-Banner" src={faq} />
-        </div>
-      </div>
+      <h1 style={{ padding: 40, textAlign: "left" }}>
+        Frequently Asked Questions
+      </h1>
 
       <Tabs
         defaultActiveKey="Students"
