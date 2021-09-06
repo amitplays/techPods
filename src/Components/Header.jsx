@@ -21,7 +21,7 @@ export default function Header() {
         variant="light"
       >
         <Container className="navBarContainer">
-          <Navbar.Brand href="/">TechPods</Navbar.Brand>
+          <Navbar.Brand href="/">bitRecruiter</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Nav.Link as={Link} to={"./recruiter"} eventKey={2}>
             <Button size="sm" variant="outline-dark">
