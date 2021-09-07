@@ -32,7 +32,7 @@ export default function Recruiter() {
           </p>
           <img src={speed} alt="speed" className="CardImages" />
           <div className="buttonGroup">
-            <Button size="sm" className="linkButton" variant="outline-warning">
+            <Button size="sm" variant="outline-warning">
               Learn More
             </Button>
           </div>
@@ -46,7 +46,7 @@ export default function Recruiter() {
           </p>
           <img src={speed} alt="speed" className="CardImages" />
           <div className="buttonGroup">
-            <Button size="sm" className="linkButton" variant="outline-warning">
+            <Button size="sm" variant="outline-warning">
               Learn More
             </Button>
           </div>

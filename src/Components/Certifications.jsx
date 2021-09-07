@@ -1,4 +1,4 @@
-import { Button, Badge } from "react-bootstrap";
+import { Button, Badge, Alert } from "react-bootstrap";
 import React from "react";
 import Fade from "react-reveal/Slide";
 
@@ -6,23 +6,27 @@ export default function Certifications() {
   return (
     <div>
       <div className="workshopsBody">
-        <h1 style={{ padding: 40, textAlign: "left" }}>Certifications</h1>
-        {/* <div className="cardStyles fullWidthHomeCard">
-          <p>
+        <div className="cardStyles fullWidthHomeCard">
+          <h1 style={{ textAlign: "left" }}>Certificate Courses</h1>
+
+          <h4 className="headingSubtext">
             Certifications will be awarded to students who clear the exam from
-            the techPods App.
-          </p>
-        </div> */}
+            the <Alert.Link href="/">BitRecruiter App</Alert.Link>.
+          </h4>
+          <Button variant="warning" className="ctaButton">
+            All Courses
+          </Button>
+        </div>
         <div className="fourCardRow">
           <Fade bottom>
             <div className="fourCardStyle">
               <h4 className="subsCardHeading">
                 Web App Developer{" "}
-                <Badge pill bg="dark">
+                {/* <Badge pill bg="dark">
                   3 Tests
-                </Badge>
+                </Badge> */}
               </h4>
-              <p>
+              <p className="headingSubtext">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -35,9 +39,9 @@ export default function Certifications() {
             <div className="fourCardStyle">
               <h4 className="subsCardHeading">
                 Mobile App Developer{" "}
-                <Badge pill bg="dark">
+                {/* <Badge pill bg="dark">
                   3 Tests
-                </Badge>
+                </Badge> */}
               </h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -52,9 +56,9 @@ export default function Certifications() {
             <div className="fourCardStyle">
               <h4 className="subsCardHeading">
                 Project Management{" "}
-                <Badge pill bg="dark">
+                {/* <Badge pill bg="dark">
                   2 Tests
-                </Badge>
+                </Badge> */}
               </h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -69,9 +73,9 @@ export default function Certifications() {
             <div className="fourCardStyle">
               <h4 className="subsCardHeading">
                 UX/UI Designer{" "}
-                <Badge pill bg="dark">
+                {/* <Badge pill bg="dark">
                   3 Tests
-                </Badge>
+                </Badge> */}
               </h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

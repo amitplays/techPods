@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container, Button, Modal } from "react-bootstrap";
 import ContactUs from "./ContactUs";
 import { Link } from "react-router-dom";
+import bBitLogo from "../assets/BbitLogo.png";
 
 export default function Header() {
   // Similar to componentDidMount and componentDidUpdate:
@@ -21,10 +22,23 @@ export default function Header() {
         variant="light"
       >
         <Container className="navBarContainer">
-          <Navbar.Brand href="/">BIT RECRUITER</Navbar.Brand>
+          <Navbar.Brand href="/">
+            <img
+              alt=""
+              src={bBitLogo}
+              width="46"
+              height="21"
+              className="logo d-inline-block"
+            />
+            <span>BIT RECRUITER</span>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Nav.Link as={Link} to={"./recruiter"} eventKey={2}>
-            <Button size="sm" variant="outline-dark">
+            <Button
+              size="sm"
+              className="recruiterButton"
+              // variant="primary-outline"
+            >
               Recruiters
             </Button>
           </Nav.Link>

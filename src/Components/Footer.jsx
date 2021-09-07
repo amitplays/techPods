@@ -24,7 +24,7 @@ export default function Footer() {
         <div className="footerCardStyles">
           <Row>
             <Col sm={6}>
-              <h3>TechPods</h3>
+              <h3>BitRecruiter</h3>
               <p>Mentor for students, Recruiters for Employers</p>
               <Form xs={2}>
                 <Form.Label htmlFor="inlineFormInputGroup" visuallyHidden>
@@ -74,7 +74,9 @@ export default function Footer() {
           </Row>
           <hr></hr>
           <Row>
-            <p className="footerLinksFirstItem">TechPods ALL RIGHTS RESERVED</p>
+            <p className="footerLinksFirstItem">
+              bitRecruiter ALL RIGHTS RESERVED
+            </p>
           </Row>
           <Row>
             <Col sm={6}>
@@ -86,9 +88,7 @@ export default function Footer() {
                   <a href="#">Terms & Conditions</a>
                 </li>
                 <li>
-                  <a as={Link} to={"./ContactUs"}>
-                    Contact Us
-                  </a>
+                  <a href="./ContactUs">Contact Us</a>
                 </li>
               </ul>
             </Col>
