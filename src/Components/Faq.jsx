@@ -1,14 +1,22 @@
 import React from "react";
 import faq from "../assets/faq.png";
 import Slide from "react-reveal/Slide";
-import { Tabs, Tab, Accordion } from "react-bootstrap";
+import { Tabs, Tab, Accordion, Alert, Button } from "react-bootstrap";
 
 export default function Faq() {
   return (
     <div className="faqBody">
-      <h1 style={{ padding: 40, textAlign: "left" }}>
-        Frequently Asked Questions
-      </h1>
+      <div className="cardStyles fullWidthHomeCard">
+        <h1 style={{ textAlign: "left" }}>Frequently Asked Questions</h1>
+
+        <h4 className="headingSubtext">
+          For queries regarding the exam app and certifications{" "}
+          <Alert.Link href="/">BitRecruiter App FAQs</Alert.Link>.
+        </h4>
+        {/* <Button variant="warning" className="ctaButton">
+          All Courses
+        </Button> */}
+      </div>
 
       <Tabs
         defaultActiveKey="Students"

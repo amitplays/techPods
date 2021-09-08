@@ -1,5 +1,13 @@
 import React from "react";
-import { Button, Form, Row, Col, InputGroup, Tabs, Tab } from "react-bootstrap";
+import {
+  Button,
+  Alert,
+  Row,
+  Col,
+  InputGroup,
+  Tabs,
+  Tab,
+} from "react-bootstrap";
 import { StudentForm, EmployerForm } from "./StudentForm";
 import faq2 from "../assets/resume.png";
 
@@ -7,8 +15,19 @@ export default function ContactUs() {
   return (
     <>
       <div className="contactUsBody">
-        <h1 style={{ padding: 40, textAlign: "left" }}>Contact Us</h1>
+        {/* <h1 style={{ padding: 40, textAlign: "left" }}>Contact Us</h1> */}
+        <div className="cardStyles fullWidthHomeCard">
+          <h1 style={{ textAlign: "left" }}>Contact Us</h1>
 
+          <h4 className="headingSubtext">
+            You can also follow us on{" "}
+            <Alert.Link href="/"> our social media handles</Alert.Link> for
+            updates !
+          </h4>
+          <Button variant="warning" className="ctaButton">
+            Request a Call
+          </Button>
+        </div>
         {/* <div className="parentOfOneCard"> */}
         {/* <div className="cardStyles fullWidthHomeCard">
             <Row>

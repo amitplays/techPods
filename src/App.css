@@ -96,7 +96,6 @@ html {
 
 .contactUsBody {
   min-height: 100vh;
-  margin-top: 30px;
 }
 
 .empContactUsCard {
@@ -149,6 +148,15 @@ html {
   background-color: rgba(255, 255, 255, 0.349);
   color: #000;
   min-height: 380px;
+  text-align: left !important;
+}
+.homePageCardStyles {
+  padding: 40px;
+  border-radius: 18px;
+  /* background-color: #dee0e233; */
+  background-color: rgba(255, 255, 255, 0.349);
+  color: #000;
+  min-height: 100vh;
   text-align: left !important;
 }
 
@@ -364,6 +372,7 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: left;
 }
 
 .headerStyles .bg-light {

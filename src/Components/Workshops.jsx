@@ -1,4 +1,4 @@
-import { Button, Badge } from "react-bootstrap";
+import { Button, Badge, Alert } from "react-bootstrap";
 import React from "react";
 import Fade from "react-reveal/Slide";
 
@@ -6,7 +6,18 @@ export default function Workshops() {
   return (
     <div>
       <div className="workshopsBody">
-        <h1 style={{ padding: 40, textAlign: "left" }}>Workshops</h1>
+        <div className="cardStyles fullWidthHomeCard">
+          <h1 style={{ textAlign: "left" }}>Workshops</h1>
+
+          <h4 className="headingSubtext">
+            You can now ask your college to{" "}
+            <Alert.Link href="/"> connect with us !</Alert.Link> for an
+            on-campus workshop or check out our upcoming worshops
+          </h4>
+          <Button variant="warning" className="ctaButton">
+            Find Workshops
+          </Button>
+        </div>
         <div className="fourCardRow">
           <Fade bottom>
             <div className="fourCardStyle">
