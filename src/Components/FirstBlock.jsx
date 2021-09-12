@@ -2,7 +2,8 @@ import React from "react";
 import Slide from "react-reveal/Slide";
 import speed from "../assets/test.png";
 import resume from "../assets/resume.png";
-import recruit from "../assets/recrui.png";
+import stu from "../assets/laptopDesign.jpg";
+import code from "../assets/coding.jpg";
 
 import { Button, Carousel, Row, Col } from "react-bootstrap";
 
@@ -98,74 +99,94 @@ export default function FirstBlock() {
 
       {/* Second Row */}
       <div className="parentOfTwoCards">
-        <Slide bottom>
-          <div className="cardStyles cardOneOfTwo">
-            <h2 className="cardHeading">Go to the Next Level</h2>
-            <p>
-              Train to Silicon Valley standards for roles in software
-              engineering, full stack development, and more.
-            </p>
-            <img src={speed} alt="speed" className="CardImages" />
-            <div className="buttonGroup">
-              {/* <Button size="sm" className="linkButton" variant="dark">
-                Learn More
-              </Button> */}
-            </div>
-          </div>
-        </Slide>
-        <Slide bottom>
-          <div className="cardStyles cardTwoOfTwo">
-            <h2 className="cardHeading">Go to the Next Level</h2>
-            <p>
-              Train to Silicon Valley standards for roles in software
-              engineering, full stack development, and more.
-            </p>
-          </div>
-        </Slide>
+        <Row>
+          <Col>
+            <Slide bottom>
+              <div className="cardStyles cardOneOfTwo">
+                <h1 className="cardHeading">Go to the Next Level</h1>
+                <p>
+                  Train to Silicon Valley standards for roles in software
+                  engineering, full stack development, and more.
+                </p>
+              </div>
+            </Slide>
+          </Col>
+          <Col>
+            <Slide bottom>
+              <div
+                style={{ backgroundImage: `url(${stu})` }}
+                className="cardStyles cardTwoOfTwo"
+              >
+                <h1 className="cardHeading">Go to the Next Level</h1>
+                <p>
+                  Train to Silicon Valley standards for roles in software
+                  engineering, full stack development, and more.
+                </p>
+              </div>
+            </Slide>
+          </Col>
+        </Row>
       </div>
 
       {/* Third Row */}
+
       <div className="parentOfTwoCards">
-        <Slide bottom>
-          <div className="cardStyles cardOneOfTwo">
-            <h2 className="cardHeading">Go to the Next Level</h2>
-            <p>
-              Train to Silicon Valley standards for roles in software
-              engineering, full stack development, and more.
-            </p>
-          </div>
-        </Slide>
-        <Slide bottom>
-          <div className="cardStyles cardTwoOfTwo">
-            <h2 className="cardHeading">Go to the Next Level</h2>
-            <p>
-              Train to Silicon Valley standards for roles in software
-              engineering, full stack development, and more.
-            </p>
-          </div>
-        </Slide>
+        <Row>
+          <Col>
+            <Slide bottom>
+              <div
+                style={{ backgroundImage: `url(${code})` }}
+                className="cardStyles cardTwoOfTwo"
+              >
+                <h1 className="cardHeading">Go to the Next Level</h1>
+                <p>
+                  Train to Silicon Valley standards for roles in software
+                  engineering, full stack development, and more.
+                </p>
+              </div>
+            </Slide>
+          </Col>
+          <Col>
+            <Slide bottom>
+              <div className="cardStyles cardOneOfTwo">
+                <h1 className="cardHeading">Go to the Next Level</h1>
+                <p>
+                  Train to Silicon Valley standards for roles in software
+                  engineering, full stack development, and more.
+                </p>
+                {/* <img src={speed} alt="speed" className="CardImages" /> */}
+              </div>
+            </Slide>
+          </Col>
+        </Row>
       </div>
 
       <div className="parentOfTwoCards">
-        <Slide bottom>
-          <div className="cardStyles cardOneOfTwo">
-            <h2 className="cardHeading">Go to the Next Level</h2>
-            <p>
-              Train to Silicon Valley standards for roles in software
-              engineering, full stack development, and more.
-            </p>
-            <img src={speed} alt="speed" className="CardImages" />
-          </div>
-        </Slide>
-        <Slide bottom>
-          <div className="cardStyles cardTwoOfTwo">
-            <h2 className="cardHeading">Go to the Next Level</h2>
-            <p>
-              Train to Silicon Valley standards for roles in software
-              engineering, full stack development, and more.
-            </p>
-          </div>
-        </Slide>
+        <Row>
+          <Col>
+            <Slide bottom>
+              <div className="cardStyles cardOneOfTwo">
+                <h1 className="cardHeading">Go to the Next Level</h1>
+                <p>
+                  Train to Silicon Valley standards for roles in software
+                  engineering, full stack development, and more.
+                </p>
+                {/* <img src={speed} alt="speed" className="CardImages" /> */}
+              </div>
+            </Slide>
+          </Col>
+          <Col>
+            <Slide bottom>
+              <div className="cardStyles cardTwoOfTwo">
+                <h1 className="cardHeading">Go to the Next Level</h1>
+                <p>
+                  Train to Silicon Valley standards for roles in software
+                  engineering, full stack development, and more.
+                </p>
+              </div>
+            </Slide>
+          </Col>
+        </Row>
       </div>
     </>
   );
