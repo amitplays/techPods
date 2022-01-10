@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container, Button, Modal } from "react-bootstrap";
 import ContactUs from "./ContactUs";
 import { Link } from "react-router-dom";
-import bBitLogo from "../assets/BbitLogo.png";
+import bBitLogo from "../assets/BitConsultantBlack.png";
 
 export default function Header() {
   // Similar to componentDidMount and componentDidUpdate:
@@ -26,11 +26,11 @@ export default function Header() {
             <img
               alt=""
               src={bBitLogo}
-              width="46"
-              height="21"
+              width="250"
+              height="46"
               className="logo d-inline-block"
             />
-            <span>BIT RECRUITER</span>
+            {/* <span>BIT RECRUITER</span> */}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Nav.Link as={Link} to={"./recruiter"} eventKey={2}>
