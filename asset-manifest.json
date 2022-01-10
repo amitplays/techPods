@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/techPods/static/css/main.57e79492.chunk.css",
+    "main.js": "/techPods/static/js/main.5d77162f.chunk.js",
+    "main.js.map": "/techPods/static/js/main.5d77162f.chunk.js.map",
+    "runtime-main.js": "/techPods/static/js/runtime-main.7f21ea02.js",
+    "runtime-main.js.map": "/techPods/static/js/runtime-main.7f21ea02.js.map",
+    "static/css/2.fb17aa6d.chunk.css": "/techPods/static/css/2.fb17aa6d.chunk.css",
+    "static/js/2.b649ce6d.chunk.js": "/techPods/static/js/2.b649ce6d.chunk.js",
+    "static/js/2.b649ce6d.chunk.js.map": "/techPods/static/js/2.b649ce6d.chunk.js.map",
+    "static/js/3.0d58fb10.chunk.js": "/techPods/static/js/3.0d58fb10.chunk.js",
+    "static/js/3.0d58fb10.chunk.js.map": "/techPods/static/js/3.0d58fb10.chunk.js.map",
+    "index.html": "/techPods/index.html",
+    "static/css/2.fb17aa6d.chunk.css.map": "/techPods/static/css/2.fb17aa6d.chunk.css.map",
+    "static/css/main.57e79492.chunk.css.map": "/techPods/static/css/main.57e79492.chunk.css.map",
+    "static/js/2.b649ce6d.chunk.js.LICENSE.txt": "/techPods/static/js/2.b649ce6d.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/techPods/static/media/cardImageStu.be250b2a.jpg",
+    "static/media/faq.9e1e9c13.png": "/techPods/static/media/faq.9e1e9c13.png",
+    "static/media/fbIcon.4c733b9b.png": "/techPods/static/media/fbIcon.4c733b9b.png",
+    "static/media/instaIcon.f7b3dff3.png": "/techPods/static/media/instaIcon.f7b3dff3.png",
+    "static/media/mesIcon2.65d0016c.png": "/techPods/static/media/mesIcon2.65d0016c.png",
+    "static/media/ofc.c384123d.jpg": "/techPods/static/media/ofc.c384123d.jpg",
+    "static/media/resume.1c25a8c8.png": "/techPods/static/media/resume.1c25a8c8.png",
+    "static/media/test.c8226494.png": "/techPods/static/media/test.c8226494.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7f21ea02.js",
+    "static/css/2.fb17aa6d.chunk.css",
+    "static/js/2.b649ce6d.chunk.js",
+    "static/css/main.57e79492.chunk.css",
+    "static/js/main.5d77162f.chunk.js"
+  ]
+}
