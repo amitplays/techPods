@@ -13,7 +13,7 @@ import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <Router>
+    <Router  basename={process.env.PUBLIC_URL} >
       <div className="App">
         <Slide bottom>
           <Header />
