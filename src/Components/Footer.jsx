@@ -24,7 +24,7 @@ export default function Footer() {
         <div className="footerCardStyles">
           <Row>
             <Col sm={6}>
-              <h3>BitRecruiter</h3>
+              <h3>BitConsultants</h3>
               <p>Mentor for students, Recruiters for Employers</p>
               <Form xs={2}>
                 <Form.Label htmlFor="inlineFormInputGroup" visuallyHidden>

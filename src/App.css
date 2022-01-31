@@ -1,7 +1,7 @@
 #root,
 body {
   /* background-color: #fce4cc; */
-  background-image: linear-gradient(rgba(253, 227, 110, 0.116), #b15300b4);
+  background-image: linear-gradient(rgba(245, 215, 188, 0.116), #f7e1cfb4);
   height: 100%;
 }
 
@@ -19,7 +19,7 @@ html {
 }
 /* Optional: show position indicator */
 ::-webkit-scrollbar-thumb {
-  background-color: #f5b061f5;
+  background-color: #ac5e00;
   border-radius: 10px;
   margin-top: 50px;
 
@@ -35,7 +35,7 @@ html {
 
 .App {
   text-align: center;
-  max-width: 95%;
+  max-width: 78%;
   display: block;
   margin: auto;
   font-family: "Nunito", sans-serif;
@@ -70,16 +70,16 @@ html {
   padding: 2px;
   border-radius: 18px;
   /* box-shadow: 5px 10px 16px #c2bdbd00; */
-  color: #000;
+  color: #310101;
   /* margin: 20px 2.5% !important; */
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #000 !important;
+  color: #310101 !important;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: rgb(211, 131, 12) !important;
+  color: #ac5e00 !important;
   transform: scale(1.1);
   font-size: 16px;
 }
@@ -142,7 +142,7 @@ html {
 }
 
 .cardStyles {
-  padding: 40px;
+  padding: 10px;
   border-radius: 18px;
   /* background-color: #dee0e233; */
   background-color: rgba(255, 255, 255, 0.349);
@@ -244,6 +244,19 @@ html {
   /* flex-wrap: wrap; */
 }
 
+.whoWeAre {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-top: 30px;
+  /* flex-wrap: wrap; */
+  padding: 60px;
+  border-radius: 18px;
+  color: #000;
+  min-height: 780px;
+  text-align: left !important;
+}
+
 .CardImages {
   max-width: 300px;
   max-height: 350px;
@@ -297,7 +310,7 @@ html {
 }
 
 .workshopsBody {
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 
 .fourCardRow {
@@ -309,11 +322,15 @@ html {
 
 .fourCardStyle {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-bottom: 15px;
   margin-top: 15px;
   border-radius: 18px;
   width: 320px;
-  background-color: rgba(255, 255, 255, 0.541);
+  /* background-color: rgba(255, 255, 255, 0.541); */
+  background-color: rgba(255, 255, 255, 0.377);
   color: #000;
   padding-bottom: 20px;
   padding-top: 20px;
@@ -400,16 +417,16 @@ html {
   border-radius: 18px;
   max-width: 100%;
   width: 100%;
-  background-color: rgb(0, 0, 0);
+  background-color: #310101;
   color: rgb(255, 255, 255);
   min-height: 410px;
   text-align: left !important;
-  margin-bottom: 20px;
+  margin: 30px 0px;
 }
 
 .footerCardStyles .list-group-item {
   color: white;
-  background-color: black;
+  background-color: #310101;
 }
 
 .footerLinks {
@@ -424,25 +441,28 @@ html {
 
 .footerCardStyles .input-group > .form-control,
 .input-group > .form-select {
-  background-color: black;
+  background-color: #310101;
   max-width: 300px;
   color: white;
 }
 .footerCardStyles .input-group-text {
-  background-color: black;
+  background-color: #310101;
   color: white;
 }
-.footerCardStyles ul li {
+.footerCardStyles ul li,
+.contactUsBody ul li {
   display: inline;
   padding-right: 15px;
 }
 
-.footerCardStyles ul {
-  padding-left: 2px;
+.footerCardStyles ul,
+.contactUsBody ul {
+  padding-left: 4px;
   font-size: small;
 }
 
-.footerCardStyles ul li :hover {
+.footerCardStyles ul li :hover,
+.contactUsBody .parentOfOneCard ul li :hover {
   transform: scale(1.4);
 }
 
@@ -467,7 +487,6 @@ html {
 }
 
 .navBarContainer img {
-  width: 56px;
   padding: 0 6px;
 }
 
@@ -478,11 +497,11 @@ html {
 .cardStyles .ctaButton {
   max-width: 200px;
   min-height: 45px;
-  background-color: #ffad419a;
-  border-color: #ffad419a;
+  background-color: #ac5e00;
+  border-color: #ac5e00;
   border-radius: 8px;
   margin-top: 40px;
-  color: black;
+  color: white;
   font-weight: 700;
 }
 
@@ -497,4 +516,49 @@ html {
   background-color: #ffae41;
   border-color: #ffae41;
   box-shadow: 0 0 0 0.25rem rgb(217 164 6 / 50%);
+}
+
+/* STUDENT PORTAL JSX STYLES ------------------------------------------------------- */
+
+.loginSignup {
+  margin: 100px 10px;
+}
+
+/* overriding button styles on (selected) tabs in StudentPortal.jsx */
+.loginSignup .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff !important;
+  background-color: rgb(211, 131, 12) !important;
+  border-radius: 10px !important;
+  width: 130px !important;
+  height: 100% !important;
+  font-size: 18px;
+  margin: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.loginSignup .nav-link {
+  color: #000;
+  text-align: left;
+}
+
+.imageWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.fullWidthButton {
+  width: 100%;
+}
+
+.emptyCol {
+  width: 10px;
+  flex-grow: 0 !important;
+}
+
+.cardFixedHeight {
+  height: 430px;
 }

@@ -1,6 +1,10 @@
 import { Button, Badge, Alert } from "react-bootstrap";
 import React from "react";
 import Fade from "react-reveal/Slide";
+import kb from "../assets/KiloBit.png";
+import mb from "../assets/MegaBit.png";
+import gb from "../assets/GigaBit.png";
+import tb from "../assets/TeraBit.png";
 
 export default function Certifications() {
   return (
@@ -20,12 +24,14 @@ export default function Certifications() {
         <div className="fourCardRow">
           <Fade bottom>
             <div className="fourCardStyle">
-              <h4 className="subsCardHeading">
-                Web App Developer{" "}
-                {/* <Badge pill bg="dark">
-                  3 Tests
-                </Badge> */}
-              </h4>
+              <img
+                height={90}
+                width={90}
+                style={{ alignSelf: "center" }}
+                src={kb}
+                alt="speed"
+              />
+              <h4 className="subsCardHeading">KiloBIT </h4>
               <p className="headingSubtext">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -36,9 +42,16 @@ export default function Certifications() {
             </div>
           </Fade>
           <Fade bottom>
-            <div className="fourCardStyle">
+            <div className="fourCardStyle cardFixedHeight">
+              <img
+                height={90}
+                width={95}
+                style={{ alignSelf: "center" }}
+                src={mb}
+                alt="speed"
+              />
               <h4 className="subsCardHeading">
-                Mobile App Developer{" "}
+                MegaBIT{" "}
                 {/* <Badge pill bg="dark">
                   3 Tests
                 </Badge> */}
@@ -53,9 +66,16 @@ export default function Certifications() {
             </div>
           </Fade>
           <Fade bottom>
-            <div className="fourCardStyle">
+            <div className="fourCardStyle cardFixedHeight">
+              <img
+                height={90}
+                width={90}
+                style={{ alignSelf: "center" }}
+                src={gb}
+                alt="speed"
+              />
               <h4 className="subsCardHeading">
-                Project Management{" "}
+                GigaBIT{" "}
                 {/* <Badge pill bg="dark">
                   2 Tests
                 </Badge> */}
@@ -70,9 +90,16 @@ export default function Certifications() {
             </div>
           </Fade>
           <Fade bottom>
-            <div className="fourCardStyle">
+            <div className="fourCardStyle cardFixedHeight">
+              <img
+                height={90}
+                width={90}
+                style={{ alignSelf: "center" }}
+                src={tb}
+                alt="speed"
+              />
               <h4 className="subsCardHeading">
-                UX/UI Designer{" "}
+                TeraBIT{" "}
                 {/* <Badge pill bg="dark">
                   3 Tests
                 </Badge> */}
