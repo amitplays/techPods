@@ -9,11 +9,13 @@ import Faq from "./Components/Faq";
 import Recruiter from "./Components/Recruiter";
 import Workshops from "./Components/Workshops";
 import Certifications from "./Components/Certifications";
+import StudentPortal from "./StudentPortal/StudentPortal";
+import LoginSignup from "./StudentPortal/LoginSignup";
 import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <Router>
+    <Router  basename={process.env.PUBLIC_URL} >
       <div className="App">
         <Slide bottom>
           <Header />
@@ -25,6 +27,7 @@ function App() {
           <Route path="/recruiter" component={Recruiter}></Route>
           <Route path="/workshops" component={Workshops}></Route>
           <Route path="/certifications" component={Certifications}></Route>
+
         </Switch>
         <Slide bottom>
           <Footer />

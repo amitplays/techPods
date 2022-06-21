@@ -3,7 +3,8 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container, Button, Modal } from "react-bootstrap";
 import ContactUs from "./ContactUs";
 import { Link } from "react-router-dom";
-import bBitLogo from "../assets/BbitLogo.png";
+import bBitLogo from "../assets/ObitLogo.png";
+import LoginSignup from "../StudentPortal/LoginSignup";
 
 export default function Header() {
   // Similar to componentDidMount and componentDidUpdate:
@@ -11,8 +12,11 @@ export default function Header() {
     window.scrollTo(0, 0);
   });
 
+  const [show, setshow] = useState(false);
+
   return (
     <div className="headerStyles">
+      <LoginSignup onHide={() => setshow(false)} show={show}></LoginSignup>
       <Navbar
         className="navBarStyles ml-auto"
         sticky="top"
@@ -24,23 +28,35 @@ export default function Header() {
         <Container className="navBarContainer">
           <Navbar.Brand href="/">
             <img
-              alt=""
+              alt="logo"
               src={bBitLogo}
-              width="46"
-              height="21"
+              width="65"
+              height="25"
               className="logo d-inline-block"
             />
-            <span>BIT RECRUITER</span>
+            {/* <span>BIT RECRUITER</span> */}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Nav.Link as={Link} to={"./recruiter"} eventKey={2}>
-            <Button
+          <Nav.Link
+          // as={Link} to={"./recruiter"} eventKey={2}
+          >
+            {/* <Button
               size="sm"
               className="recruiterButton"
+              onClick={() => setshow(true)}
               // variant="primary-outline"
             >
-              Recruiters
-            </Button>
+              Download App
+            </Button> */}
+            <span
+              href="/"
+              style={{
+                color: "black",
+                fontSize: "23px",
+              }}
+            >
+              BIT CONSULTANT
+            </span>
           </Nav.Link>
 
           <Navbar.Collapse
@@ -49,7 +65,7 @@ export default function Header() {
           >
             <Nav className="ml-auto">
               <Nav.Link
-                // onClick={contactUs}
+                // onClick={contactUs} `
                 as={Link}
                 to={"./ContactUs"}
                 eventKey={2}
