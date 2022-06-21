@@ -19,7 +19,7 @@ export default function Faq() {
       </div>
 
       <Tabs
-        defaultActiveKey="Students"
+        defaultActiveKey="Employers"
         id="uncontrolled-tab-example"
         className="mb-3 ContactTabStyle"
         variant="pills"
